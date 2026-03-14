@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+:root {
+    /* variable declaradas */
+    --clr-primary-red: hsl(4, 100%, 67%);
+
+    --clr-neutral-blue800: hsl(234, 29%, 20%);
+    --clr-neutral-blue700: hsl(235, 18%, 26%);
+    --clr-neutral-grey: hsl(0, 0%, 58%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --fs-root: 16px;
+}
+
+html {
+    /* configuracion font */
+    font-size: var(--fs-root);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+
+body {
+    /* add base backgroundColor */
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-neutral-blue700);
+}
+
+.container {
+    border: 3px solid lightblue;
+    width: 375px;
+}
+
+.form-image {
+
+    /* max-width: 375px; */
+
+}
+
+.form {
+    width: 85%;
+    margin: 2em auto;
+}
+
+.form-title {
+    color: var(--clr-neutral-blue800);
+    font-size: 2em;
+    /* margin-top: .7em; */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form-subtitle {
+    margin-bottom: 1em;
+}
+
+.form-list {
+    margin-bottom: 1em;
+    list-style: none;
+}
+
+.form-list_item {
+    line-height: 1.8;
+}
+
+
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
