@@ -18,30 +18,37 @@
 <body>
 
   <main class="container">
-    <img class="form-image" src="./assets/images/illustration-sign-up-mobile.svg" alt="sasd">
-    <!-- Sign-up form start -->
-    <form class="form">
-      <h1 class="form-title">Stay updated!</h1>
-      <p class="form-subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="form-list">
-        <li class="form-list_item"> Product discovery and building what matters</li>
-        <li class="form-list_item">Measuring to ensure updates are a success</li>
-        <li class="form-list_item">And much more!</li>
-      </ul>
+    <div class="card" style="display: none;">
+      <img class="form-image" src="./assets/images/illustration-sign-up-mobile.svg" alt="sasd">
+      <!-- Sign-up form start -->
+      <form class="form">
+        <h1 class="form-title">Stay updated!</h1>
+        <p class="form-subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="form-list">
+          <li class="form-list_item"> Product discovery and building what matters</li>
+          <li class="form-list_item">Measuring to ensure updates are a success</li>
+          <li class="form-list_item">And much more!</li>
+        </ul>
 
-      <label for="">Email address</label>
-      <input type="text" placeholder="email@company.com">
-      <button type="button">Subscribe to monthly newsletter</button>
-    </form>
+        <div class="form-footer">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-input-email" type="text" id="email" placeholder="email@company.com">
+          <button class="btn-subcribe" type="button">Subscribe to monthly newsletter</button>
+        </div>
+      </form>
+    </div>
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div style="display: none;">
-      <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.</p>
-      <button type="button">Dismiss message</button>
+    <div class="div-success">
+      <div>
+        <img class="img-success" src="./assets/images/icon-success.svg" alt="">
+        <h1 class="title-success">Thanks for subscribing!</h1>
+        <p class="description-success">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button class="btn-success" type="button">Dismiss message</button>
     </div>
     <!-- Success message end -->
   </main>
